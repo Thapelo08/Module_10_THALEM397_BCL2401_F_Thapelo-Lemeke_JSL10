@@ -20,17 +20,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // 🪲 Bug: Asynchronous function ?
-    document.getElementById("solveRoom3").addEventListener("click", () => {
-        fetch('directions.json') 
-            .then(response => response.json())
-            .then(directions => {
-                navigateLabyrinth(directions)
-                    .then(message => {
-                        // 🪲 Bug: Incorrect method
+    document.getElementById("solveRoom3").addEventListener("click", async () => {
+        const response = await fetch('directions.json'); const dirrections = await response.json(); 
+        const message = await 
+        navigateLabyrinth(directions);  
+            
+                    
+                        // Display the r
                         document.getElementById("room3Result").innerHTML = message;
-                    });
+                    
             });
-    });
+    
 });
 
 function findMostRecentBook(books) {
