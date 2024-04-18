@@ -36,10 +36,10 @@ function findMostRecentBook(books) {
     
     return books.reduce((mostRecent, book) => { const bookDate = new Date(book.published); const mostRecentDate = new Date(mostRecent.published); return bookDtae > mostRecentDate ? book : mostRecent; });}
 
+    // Function to find the intersections of two sets
 function findIntersection(setA, setB) {
-    // 🪲 Bug: Incorrect logic
-    const intersection = new Set([...setA]);
-    return intersection;
+return new Set([...setA].filter( x => setB.has(x)));
+    
 }
 
 async function navigateLabyrinth(directions) {
