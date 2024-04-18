@@ -31,11 +31,10 @@ document.addEventListener("DOMContentLoaded", () => {
             });
     
 });
-
+   // Function to find the most recent book
 function findMostRecentBook(books) {
-    // 🪲 Bug: Logic error
-    return books.reduce((mostRecent, book) => new Date(book.published) < new Date(mostRecent.published) ? book : mostRecent);
-}
+    
+    return books.reduce((mostRecent, book) => { const bookDate = new Date(book.published); const mostRecentDate = new Date(mostRecent.published); return bookDtae > mostRecentDate ? book : mostRecent; });}
 
 function findIntersection(setA, setB) {
     // 🪲 Bug: Incorrect logic
