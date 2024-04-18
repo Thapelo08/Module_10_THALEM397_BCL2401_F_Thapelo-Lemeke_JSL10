@@ -21,13 +21,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 🪲 Bug: Asynchronous function ?
     document.getElementById("solveRoom3").addEventListener("click", async () => {
-        const response = await fetch('directions.json'); const dirrections = await response.json(); 
-        const message = await 
+        const response = await fetch('directions.json'); const dirrections = await response.json(); const message = await 
         navigateLabyrinth(directions);  
             
                     
-                        // Display the r
-                        document.getElementById("room3Result").innerHTML = message;
+                        // Display the result in the HTML
+                        document.getElementById("room3Result").textContent = message;
                     
             });
     
