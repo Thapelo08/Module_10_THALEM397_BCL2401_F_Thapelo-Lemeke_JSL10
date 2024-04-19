@@ -9,4 +9,8 @@
 ## CHALLENGES 
 
 -It was when i go live and then i pressed on the header of those rooms the the recent book, the common concepts and the asynchronous labyrinth was not appearing the way it should.
--
+ 
+
+ ## WHAT I LEARNT
+
+-Listening to instructions and understanding them thoroughly really makes you get going with the project and doing according to the requirements.
